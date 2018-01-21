@@ -1,0 +1,7 @@
+{
+  "name": "ts-node-test-register",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}
