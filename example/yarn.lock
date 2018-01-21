@@ -2,16 +2,6 @@
 # yarn lockfile v1
 
 
-"@types/normalize-package-data@*":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
-
-"@types/read-pkg@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/read-pkg/-/read-pkg-3.0.0.tgz#17ab6f0b396a58a5567ee387f558f2caedc8ae53"
-  dependencies:
-    "@types/normalize-package-data" "*"
-
 "@types/strip-bom@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/strip-bom/-/strip-bom-3.0.0.tgz#14a8ec3956c2e81edb7520790aecf21c290aebd2"
@@ -316,9 +306,7 @@ supports-color@^4.0.0:
 "ts-node-test-register@file:..":
   version "1.0.0"
   dependencies:
-    "@types/read-pkg" "^3.0.0"
     read-pkg "^3.0.0"
-    ts-node "^4.1.0"
 
 ts-node@^4.1.0:
   version "4.1.0"
