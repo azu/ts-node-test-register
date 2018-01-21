@@ -46,7 +46,7 @@ Install with [npm](https://www.npmjs.com/):
 
     npm install ts-node ts-node-test-register
 
-:warning: [ts-node](https://github.com/TypeStrong/ts-node "ts-node") is [peerDependencies](https://docs.npmjs.com/files/package.json#peerdependencies "peerDependencies").
+:warning: [ts-node](https://github.com/TypeStrong/ts-node "ts-node") is [peerDependencies](https://docs.npmjs.com/files/package.json#peerdependencies "peerDependencies").  
 You should need to install `ts-node`.
 
 ## Usage
