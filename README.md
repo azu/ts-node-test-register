@@ -1,6 +1,6 @@
 # ts-node-test-register [![Build Status](https://travis-ci.org/azu/ts-node-test-register.svg?branch=master)](https://travis-ci.org/azu/ts-node-test-register)
 
-Prefer load `test/tsconfig.json` with [ts-node](https://github.com/TypeStrong/ts-node "ts-node").
+Load from `test/tsconfig.json` with [ts-node](https://github.com/TypeStrong/ts-node "ts-node").
 
 ## Feature
 
