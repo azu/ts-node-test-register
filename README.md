@@ -23,6 +23,13 @@ You can specified the `{test}` by `directories` of `package.json`.
   },
 ```
 
+**Notes:** Why need to load different `tsconfig.json` between main and test?
+
+In some times, we use different `tsconfig.json` between main code and test code.
+
+For example, you can enable `allowJs` in test code.
+It supports gradual migration that convert JavaScript to TypeScript. 
+
 ### Type Check by default
 
 `ts-node`(v4) disable `type-check` by default.
