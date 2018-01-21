@@ -1,0 +1,100 @@
+# ts-node-test-register
+
+Prefer load `test/tsconfig.json` with [ts-node](https://github.com/TypeStrong/ts-node "ts-node").
+
+## Feature
+
+### Load `test/tsconfig.json`
+
+It load `tsconfig.json` file by following priority.
+
+- `project/{test}/tsconfig.test.json`
+- `project/{test}/tsconfig.json`
+- `project/tsconfig.test.json`
+- `project/tsconfig.json`
+
+`{test}` is `test` directory by default.
+
+You can specified the `{test}` by `directories` of `package.json`.
+
+```
+  "directories": {
+    "test": "test"
+  },
+```
+
+### Type Check by default
+
+`ts-node`(v4) disable `type-check` by default.
+
+- [Release "Fast" By Default · TypeStrong/ts-node](https://github.com/TypeStrong/ts-node/releases/tag/v4.0.0 "Release &#34;Fast&#34; By Default · TypeStrong/ts-node")
+
+The motivation is based on so not good experience.
+
+- [Type error reporting · Issue #79 · kulshekhar/ts-jest](https://github.com/kulshekhar/ts-jest/issues/79 "Type error reporting · Issue #79 · kulshekhar/ts-jest")
+- [test(textlint-formatter): `mocha` runs fine while `tsc` cannot compile the script · Issue #448 · textlint/textlint](https://github.com/textlint/textlint/issues/448 "test(textlint-formatter): `mocha` runs fine while `tsc` cannot compile the script · Issue #448 · textlint/textlint")
+
+This register library supports [Mike Haas](https://github.com/mikehaas763 "Mike Haas")'s opinion.
+
+> test code is still code, if there's type errors in such test code, shouldn't it fail?
+> -- <https://github.com/kulshekhar/ts-jest/issues/79#issuecomment-355397865>
+
+
+## Install
+
+Install with [npm](https://www.npmjs.com/):
+
+    npm install ts-node-test-register
+
+## Usage
+
+Using with [mocha](https://github.com/mochajs/mocha "mocha").
+
+```
+mocha --require ts-node-test-register "test/**/*.ts"
+```
+
+Or define `--require ts-node-test-register` to [`mocha.opts`](example/test/mocha.opts).
+
+```
+├── package.json
+├── src
+│   └── index.ts
+└── test
+    ├── mocha.opts (--require ts-node-test-register)
+    ├── tsconfig.json // <= load this tsconfig.json
+    └── index-test.ts
+```
+
+For more details, see [example](./example/).
+
+## Changelog
+
+See [Releases page](https://github.com/azu/ts-node-test-register/releases).
+
+## Running tests
+
+Install devDependencies and Run `npm test`:
+
+    npm i -d && npm test
+
+## Contributing
+
+Pull requests and stars are always welcome.
+
+For bugs and feature requests, [please create an issue](https://github.com/azu/ts-node-test-register/issues).
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## Author
+
+- [github/azu](https://github.com/azu)
+- [twitter/azu_re](https://twitter.com/azu_re)
+
+## License
+
+MIT © azu
