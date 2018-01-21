@@ -77,9 +77,10 @@ See [Releases page](https://github.com/azu/ts-node-test-register/releases).
 
 ## Running tests
 
-Install devDependencies and Run `npm test`:
+Install devDependencies and Run `yarn test`:
 
-    npm i -d && npm test
+    yarn test
+    yarn run test:example
 
 ## Contributing
 
