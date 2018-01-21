@@ -1,4 +1,4 @@
-# ts-node-test-register
+# ts-node-test-register [![Build Status](https://travis-ci.org/azu/ts-node-test-register.svg?branch=master)](https://travis-ci.org/azu/ts-node-test-register)
 
 Prefer load `test/tsconfig.json` with [ts-node](https://github.com/TypeStrong/ts-node "ts-node").
 
@@ -44,7 +44,10 @@ This register library supports [Mike Haas](https://github.com/mikehaas763 "Mike 
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install ts-node-test-register
+    npm install ts-node ts-node-test-register
+
+:warning: [ts-node](https://github.com/TypeStrong/ts-node "ts-node") is [peerDependencies](https://docs.npmjs.com/files/package.json#peerdependencies "peerDependencies").
+You should need to install `ts-node`.
 
 ## Usage
 
