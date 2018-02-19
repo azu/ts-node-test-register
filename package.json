@@ -45,11 +45,11 @@
     "lint-staged": "^6.0.1",
     "mocha": "^5.0.0",
     "prettier": "^1.10.2",
-    "ts-node": "^4.1.0",
+    "ts-node": "^5.0.0",
     "typescript": "^2.6.2"
   },
   "peerDependencies": {
-    "ts-node": "^4.1.0"
+    "ts-node": "^5.0.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css}": [
