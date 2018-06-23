@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/pass.ts && mocha test/test.js && mocha test/fail.ts || exit 0"
+    "test": "mocha test/pass.ts && mocha test/test.js && npm run test:fail",
+    "test:fail": "mocha test/fail.ts || exit 0"
   },
   "keywords": [],
   "author": "azu",
