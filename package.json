@@ -34,7 +34,7 @@
     "watch": "tsc -p . --watch"
   },
   "dependencies": {
-    "read-pkg": "^3.0.0"
+    "read-pkg": "^4.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.3",
