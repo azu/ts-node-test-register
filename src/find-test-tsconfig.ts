@@ -1,6 +1,6 @@
-import readPkg = require("read-pkg");
 import * as path from "path";
 import * as fs from "fs";
+const readPkg = require("read-pkg");
 
 /**
  * get "test" dir
@@ -12,11 +12,19 @@ import * as fs from "fs";
  * @param {string} currentDir
  */
 export const getTestDirectoryInPackageJSON = (currentDir?: string) => {
-    const pkg = readPkg.sync(currentDir);
+    if (!currentDir) {
+        return;
+    }
+    const pkg = readPkg.sync({
+        cwd: currentDir
+    });
     if (!pkg) {
         return;
     }
     if (!pkg.directories) {
+        return;
+    }
+    if (typeof pkg.directories.test !== "string") {
         return;
     }
     return pkg.directories.test;
@@ -47,11 +55,11 @@ export const findTestTsconfigJSON = (testDirectoryName: string = "test", baseDir
     const testTsconfigJsonInTestDir = path.join(baseDirectory, testDirectoryName, "tsconfig.test.json");
     const tsconfigJsonInTestDir = path.join(baseDirectory, testDirectoryName, "tsconfig.json");
     const testTsconfigJsonInCurrentDir = path.join(baseDirectory, "tsconfig.test.json");
-    const tsconfigInCurrnetDir = path.join(baseDirectory, "tsconfig.json");
+    const tsconfigInCurrentDir = path.join(baseDirectory, "tsconfig.json");
     return resolvePath([
         testTsconfigJsonInTestDir,
         tsconfigJsonInTestDir,
         testTsconfigJsonInCurrentDir,
-        tsconfigInCurrnetDir
+        tsconfigInCurrentDir
     ]);
 };
