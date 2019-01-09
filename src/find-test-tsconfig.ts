@@ -1,6 +1,6 @@
-import readPkg = require("read-pkg");
 import * as path from "path";
 import * as fs from "fs";
+const readPkg = require("read-pkg");
 
 /**
  * get "test" dir
@@ -12,7 +12,9 @@ import * as fs from "fs";
  * @param {string} currentDir
  */
 export const getTestDirectoryInPackageJSON = (currentDir?: string) => {
-    const pkg = readPkg.sync(currentDir);
+    const pkg = readPkg.sync({
+        cwd: currentDir
+    });
     if (!pkg) {
         return;
     }
