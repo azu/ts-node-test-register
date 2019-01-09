@@ -1,12 +1,12 @@
 # ts-node-test-register [![Build Status](https://travis-ci.org/azu/ts-node-test-register.svg?branch=master)](https://travis-ci.org/azu/ts-node-test-register)
 
-Load from `test/tsconfig.json` with [ts-node](https://github.com/TypeStrong/ts-node "ts-node").
+Use `test/tsconfig.json` with [ts-node](https://github.com/TypeStrong/ts-node "ts-node") for testing.
 
-## Feature
+## Features
 
 ### Load `test/tsconfig.json`
 
-It load `tsconfig.json` file by following priority.
+This register library load `tsconfig.json` file by following priority.
 
 - `project/{test}/tsconfig.test.json`
 - `project/{test}/tsconfig.json`
