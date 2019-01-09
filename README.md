@@ -32,7 +32,7 @@ It supports gradual migration that convert JavaScript to TypeScript.
 
 ### Type Check by default
 
-`ts-node`(v4) disable `type-check` by default.
+<del>`ts-node`(v4) disable `type-check` by default.</del><ins>This behavior is reverted in [v6.0.0](https://github.com/TypeStrong/ts-node/releases/tag/v6.0.0)</ins>
 
 - [Release "Fast" By Default · TypeStrong/ts-node](https://github.com/TypeStrong/ts-node/releases/tag/v4.0.0 "Release &#34;Fast&#34; By Default · TypeStrong/ts-node")
 
