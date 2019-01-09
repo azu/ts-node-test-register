@@ -12,6 +12,9 @@ const readPkg = require("read-pkg");
  * @param {string} currentDir
  */
 export const getTestDirectoryInPackageJSON = (currentDir?: string) => {
+    if (!currentDir) {
+        return;
+    }
     const pkg = readPkg.sync({
         cwd: currentDir
     });
