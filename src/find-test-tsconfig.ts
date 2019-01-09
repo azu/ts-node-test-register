@@ -52,11 +52,11 @@ export const findTestTsconfigJSON = (testDirectoryName: string = "test", baseDir
     const testTsconfigJsonInTestDir = path.join(baseDirectory, testDirectoryName, "tsconfig.test.json");
     const tsconfigJsonInTestDir = path.join(baseDirectory, testDirectoryName, "tsconfig.json");
     const testTsconfigJsonInCurrentDir = path.join(baseDirectory, "tsconfig.test.json");
-    const tsconfigInCurrnetDir = path.join(baseDirectory, "tsconfig.json");
+    const tsconfigInCurrentDir = path.join(baseDirectory, "tsconfig.json");
     return resolvePath([
         testTsconfigJsonInTestDir,
         tsconfigJsonInTestDir,
         testTsconfigJsonInCurrentDir,
-        tsconfigInCurrnetDir
+        tsconfigInCurrentDir
     ]);
 };
