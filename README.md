@@ -51,7 +51,7 @@ This register library supports [Mike Haas](https://github.com/mikehaas763 "Mike 
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install ts-node ts-node-test-register
+    npm install ts-node ts-node-test-register --save-dev
 
 :warning: [ts-node](https://github.com/TypeStrong/ts-node "ts-node") is [peerDependencies](https://docs.npmjs.com/files/package.json#peerdependencies "peerDependencies").  
 You should need to install `ts-node`.
