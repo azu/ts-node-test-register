@@ -21,6 +21,9 @@ export const getTestDirectoryInPackageJSON = (currentDir?: string) => {
     if (!pkg.directories) {
         return;
     }
+    if (typeof pkg.directories.test !== "string") {
+        return;
+    }
     return pkg.directories.test;
 };
 
