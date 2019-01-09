@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/pass.ts && mocha test/test.js && npm run test:fail",
-    "test:fail": "mocha test/fail.ts || exit 0"
+    "test:fail": "expected-exit-status 1 --command \"mocha test/fail.ts\""
   },
   "keywords": [],
   "author": "azu",
@@ -14,6 +14,7 @@
     "mocha": "^5.0.0",
     "ts-node": "^7.0.0",
     "ts-node-test-register": "file:..",
-    "typescript": "^3.0.0"
+    "typescript": "^3.0.0",
+    "expected-exit-status": "^1.0.0"
   }
 }
