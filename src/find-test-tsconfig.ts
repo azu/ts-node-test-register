@@ -16,7 +16,7 @@ export const getTestDirectoryInPackageJSON = (currentDir?: string) => {
         return;
     }
     const pkg = readPkg.sync({
-        cwd: currentDir
+        cwd: currentDir,
     });
     if (!pkg) {
         return;
@@ -60,6 +60,6 @@ export const findTestTsconfigJSON = (testDirectoryName: string = "test", baseDir
         testTsconfigJsonInTestDir,
         tsconfigJsonInTestDir,
         testTsconfigJsonInCurrentDir,
-        tsconfigInCurrentDir
+        tsconfigInCurrentDir,
     ]);
 };
