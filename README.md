@@ -64,14 +64,14 @@ Using with [mocha](https://github.com/mochajs/mocha "mocha").
 mocha --require ts-node-test-register "test/**/*.ts"
 ```
 
-Or define `--require ts-node-test-register` to [`mocha.opts`](example/test/mocha.opts).
+Or define `--require ts-node-test-register` to [`.mocharc.{js,json,yml}`](example/.mocharc.json).
 
 ```
 ├── package.json
+├── .mocharc.json (--require ts-node-test-register)
 ├── src
 │   └── index.ts
 └── test
-    ├── mocha.opts (--require ts-node-test-register)
     ├── tsconfig.json // <= load this tsconfig.json
     └── index-test.ts
 ```
