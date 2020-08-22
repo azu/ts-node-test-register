@@ -1,6 +1,6 @@
 {
   "name": "ts-node-test-register",
-  "version": "8.0.1",
+  "version": "9.0.0",
   "description": "Load from `test/tsconfig.json` with ts-node.",
   "homepage": "https://github.com/azu/ts-node-test-register",
   "bugs": {
