@@ -1,4 +1,4 @@
-# ts-node-test-register [![Build Status](https://travis-ci.org/azu/ts-node-test-register.svg?branch=master)](https://travis-ci.org/azu/ts-node-test-register)
+# ts-node-test-register [![Actions Status: test](https://github.com/azu/ts-node-test-register/workflows/test/badge.svg)](https://github.com/azu/ts-node-test-register/actions?query=workflow%3A"test")
 
 Use `test/tsconfig.json` with [ts-node](https://github.com/TypeStrong/ts-node "ts-node") for testing.
 
