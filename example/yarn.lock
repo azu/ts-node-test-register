@@ -307,9 +307,9 @@ esprima@^4.0.0:
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
 
-expected-exit-status@^1.0.0:
+expected-exit-status@^1.0.2:
   version "1.0.2"
-  resolved "https://registry.npmjs.org/expected-exit-status/-/expected-exit-status-1.0.2.tgz#79c5ba9ae113bc8b7a290787686216001e28cf57"
+  resolved "https://registry.yarnpkg.com/expected-exit-status/-/expected-exit-status-1.0.2.tgz#79c5ba9ae113bc8b7a290787686216001e28cf57"
   integrity sha512-0SWHJ91/9qRqpos+NgxKHH2wijV95B/FHIO9PtPe7dzupHCYcyKJClKO42gM96M+xnf93uPZsGVa22LIQW77iw==
   dependencies:
     cross-spawn "^6.0.5"
@@ -1149,7 +1149,7 @@ trim-newlines@^2.0.0:
   integrity sha1-tAPQuRvlDDMd/EuC7s6yLD3hbSA=
 
 "ts-node-test-register@file:..":
-  version "8.0.1"
+  version "9.0.1"
   dependencies:
     read-pkg "^5.2.0"
 
