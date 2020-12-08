@@ -13,7 +13,7 @@
   "devDependencies": {
     "expected-exit-status": "^1.0.2",
     "mocha": "^8.2.1",
-    "ts-node": "^9.1.0",
+    "ts-node": "^9.1.1",
     "ts-node-test-register": "file:..",
     "typescript": "^3.9.3"
   }
