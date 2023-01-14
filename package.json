@@ -59,10 +59,5 @@
     "tabWidth": 4,
     "trailingComma": "none"
   },
-  "husky": {
-    "hooks": {
-      "post-commit": "git reset",
-      "pre-commit": "lint-staged"
-    }
-  }
+  "husky": ""
 }
