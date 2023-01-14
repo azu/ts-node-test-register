@@ -5,5 +5,5 @@ const testDir = getTestDirectoryInPackageJSON();
 const tsconfigFilePath = findTestTsconfigJSON(testDir);
 register({
     project: tsconfigFilePath,
-    typeCheck: true,
+    typeCheck: true
 });
