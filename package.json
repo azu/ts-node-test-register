@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",
-    "@types/node": "^18.16.18",
+    "@types/node": "^18.16.19",
     "cross-env": "^7.0.3",
     "lint-staged": "^13.2.3",
     "mocha": "^10.2.0",
