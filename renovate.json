@@ -1,3 +1,5 @@
 {
-  "extends": ["@azu"]
+  "extends": [
+    "github>azu/renovate-config"
+  ]
 }
