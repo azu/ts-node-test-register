@@ -39,7 +39,7 @@
     "@types/mocha": "^10.0.7",
     "@types/node": "^18.19.39",
     "cross-env": "^7.0.3",
-    "lint-staged": "^13.3.0",
+    "lint-staged": "^15.2.7",
     "mocha": "^10.5.1",
     "prettier": "^2.8.2",
     "ts-node": "^10.9.2",
