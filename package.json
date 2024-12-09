@@ -33,7 +33,7 @@
     "prepare": "git config --local core.hooksPath .githooks"
   },
   "dependencies": {
-    "read-pkg": "^5.2.0"
+    "read-pkg": "^9.0.1"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
