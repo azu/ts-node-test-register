@@ -73,10 +73,10 @@
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-10.0.10.tgz#91f62905e8d23cbd66225312f239454a23bebfa0"
   integrity sha512-xPyYSz1cMPnJQhl0CLMH68j3gprKZaTjG3s5Vi+fDgx+uhG9NOXwbVt52eFS8ECyXhyKcjDLCBEqBExKuiZb7Q==
 
-"@types/node@^18.19.87":
-  version "18.19.87"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.87.tgz#690f000cc51e3c7f48bc00f7e86fac6eb550b709"
-  integrity sha512-OIAAu6ypnVZHmsHCeJ+7CCSub38QNBS9uceMQeg7K5Ur0Jr+wG9wEOEvvMbhp09pxD5czIUy/jND7s7Tb6Nw7A==
+"@types/node@^18.19.96":
+  version "18.19.100"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.100.tgz#7f3aefbb6911099ab7e0902a1f373b1a4d2c1947"
+  integrity sha512-ojmMP8SZBKprc3qGrGk8Ujpo80AXkrP7G2tOT4VWr5jlr5DHjsJF+emXJz+Wm0glmy4Js62oKMdZZ6B9Y+tEcA==
   dependencies:
     undici-types "~5.26.4"
 
