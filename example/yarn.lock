@@ -482,7 +482,7 @@ minimatch@^9.0.4, minimatch@^9.0.5:
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.1.2.tgz#93a9626ce5e5e66bd4db86849e7515e92340a707"
   integrity sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==
 
-mocha@^11.4.0:
+mocha@^11.5.0:
   version "11.5.0"
   resolved "https://registry.yarnpkg.com/mocha/-/mocha-11.5.0.tgz#7b042964437c0829c7e492b8d8864eb0ca96504c"
   integrity sha512-VKDjhy6LMTKm0WgNEdlY77YVsD49LZnPSXJAaPNL9NRYQADxvORsyG1DIQY6v53BKTnlNbEE2MbVCDbnxr4K3w==
